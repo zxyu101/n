@@ -7949,15 +7949,15 @@ end
 end
 ----------------------------------------------------------------------------------------------------
 -- نهايه التفعيل
-if text == 'السورس' or text == 'سورس' or text == 'ياسورس' or text == 'يا سورس' then 
-local Text = "*ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ الجوكر\n\n*[ 🇮🇶 ┇  الجوكر ᴄʜᴀɴɴᴇʟ](http://t.me/b5hp_t)*\n\n*[ 🇮🇶 ┇  ɪɴғᴏ sᴏᴜʀᴄᴇ](http://t.me/b5hp_t)*\n\n*[ 🇮🇶 ┇ ᴅᴇᴠᴇʟᴏᴘᴇʀ](http://t.me/YYYTTTY_1)*\n\n*[ 🇮🇶 ┇  الجوكر ](http://t.me/b5hp_t)*\n*"
-keyboard = {} 
-keyboard.inline_keyboard = {
-{
-{text = '𝖲𝗈𝗎𝗋𝖼𝖾  جوكر ',url="t.me/b5hp_t"}
-},
-}
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/cc55ccc/557&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+if text == 'السورس' or text == 'سورس' then
+Text = [[
+
+[Ch dev الجوكر](t.me/b5hp_t)
+
+[مطور السورس](t.me/YYYTTTY_1)
+]]
+send(msg.chat_id_, msg.id_,Text)
+return false
 end
 ----------------------------------------------------------------------------------------------------
 if text == 'تفعيل' then
