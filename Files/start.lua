@@ -7956,8 +7956,9 @@ Text = [[
 
 [مطور السورس](t.me/YYYTTTY_1)
 ]]
-send(msg.chat_id_, msg.id_,Text)
+bot.sendText(msg.chat_id, msg.id,Text)
 return false
+
 end
 ----------------------------------------------------------------------------------------------------
 if text == 'تفعيل' then
