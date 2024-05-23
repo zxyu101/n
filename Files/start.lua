@@ -2588,7 +2588,7 @@ redis:del(bot_id.."Rp:Manager:File:caption"..msg.chat_id..":"..text)
 redis:del(bot_id.."Rp:content:Audio"..msg.chat_id..":"..text)
 redis:del(bot_id.."Rp:content:Audio:caption"..msg.chat_id..":"..text)
 redis:sadd(bot_id.."List:Rp:content"..msg.chat_id, text)
-bot.sendText(msg.chat_id,msg.id,"*  🇮🇶 ┇قم بارسال الرد الذي تريد اضافته*","md",true)  
+bot.sendText(msg.chat_id,msg.id,"*  🇮?? ┇قم بارسال الرد الذي تريد اضافته*","md",true)  
 return false
 end
 if text == "اضف رد" then
@@ -7957,7 +7957,7 @@ keyboard.inline_keyboard = {
 {text = '𝖲𝗈𝗎𝗋𝖼𝖾  جوكر ',url="t.me/b5hp_t"}
 },
 }
-https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/b5hp_t&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
+https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg.chat_id .. "&photo=https://t.me/cc55ccc/557&caption=".. URL.escape(Text).."&photo=0&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 ----------------------------------------------------------------------------------------------------
 if text == 'تفعيل' then
