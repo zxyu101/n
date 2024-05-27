@@ -8321,17 +8321,8 @@ end
 
 ------------------------------
 end
-if text == 'السورس' or text == 'سورس' or text == 'يا سورس'  then
-local reply_markup = bot.replyMarkup{
-type = 'inline',
-data = {
-{
-{text = '◜ ᥉᥆υᖇᥴᥱ الجوكر◞', url = 'https://t.me/b5hp_t'}, {text = '◜ ꪔY ժᥱ᥎◞', url = 't.me/YYYTTTY_1'}, 
-},
-}
-}
-bot.sendPhoto(msg.chat_id,msg.id, 'https://t.me/cc55ccc/557', [[
-𝐓𝐇𝐄 𝐁𝐄𝐒𝐓 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐍 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌
-]],"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
+if text == "سورس") then
+mark = {'ها'}
+bot.sendText(msg.chat_id,msg.id,"*"..mark.."*","md",true)  
 end
 Runbot.run(Call)
