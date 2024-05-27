@@ -7949,17 +7949,7 @@ end
 end
 ----------------------------------------------------------------------------------------------------
 -- نهايه التفعيل
-if text == 'السورس' or text == 'سورس' then
-Text = [[
 
-[Ch dev الجوكر](t.me/b5hp_t)
-
-[مطور السورس](t.me/YYYTTTY_1)
-]]
-send(msg.chat_id_, msg.id_,Text)
-return false
-end
-----------------------------------------------------------------------------------------------------
 if text == 'تفعيل' then
 if msg.can_be_deleted_for_all_users == false then
 bot.sendText(msg.chat_id,msg.id,"*  🇮🇶 ┇عذراً البوت ليس ادمن في المجموعة*","md",true)  
@@ -8330,5 +8320,18 @@ end
 ----------------------------------------------------------------------
 
 ------------------------------
+end
+if text == 'السورس' or text == 'سورس' or text == 'يا سورس'  then
+local reply_markup = bot.replyMarkup{
+type = 'inline',
+data = {
+{
+{text = '◜ ᥉᥆υᖇᥴᥱ الجوكر◞', url = 'https://t.me/b5hp_t'}, {text = '◜ ꪔY ժᥱ᥎◞', url = 't.me/YYYTTTY_1'}, 
+},
+}
+}
+bot.sendPhoto(msg.chat_id,msg.id, 'https://t.me/cc55ccc/557', [[
+𝐓𝐇𝐄 𝐁𝐄𝐒𝐓 𝐒𝐎𝐔𝐑𝐂𝐄 𝐎𝐍 𝐓𝐄𝐋𝐄𝐆𝐑𝐀𝐌
+]],"md", true, nil, nil, nil, nil, nil, nil, nil, nil, reply_markup)
 end
 Runbot.run(Call)
